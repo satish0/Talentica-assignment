@@ -1,0 +1,25 @@
+$media-575: 575px;
+$media-767: 767px;
+$media-991: 991px;
+$media-1199: 1199px;
+
+@mixin media575 {
+  @media (max-width: #{$media-575}) {
+    @content;
+  }
+}
+@mixin media767 {
+  @media (max-width: #{$media-767}) {
+    @content;
+  }
+}
+@mixin media991 {
+  @media (max-width: #{$media-991}) {
+    @content;
+  }
+}
+@mixin media1199 {
+  @media (max-width: #{$media-1199}) {
+    @content;
+  }
+}
