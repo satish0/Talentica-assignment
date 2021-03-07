@@ -345,7 +345,9 @@ body {
   text-align: center; }
   .benefits .benefits-card-inner img {
     max-width: 77px;
-    width: 100%; }
+    width: 100%;
+    transform: scale(1);
+    transition: transform 0.5s ease; }
   .benefits .benefits-card-inner h5 {
     font-size: 18px;
     font-weight: 700;
@@ -358,6 +360,9 @@ body {
     line-height: 20px;
     color: #666666;
     margin: 10px 0 0; }
+  .benefits .benefits-card-inner:hover img {
+    transform: scale(1.1);
+    transition: transform 0.5s ease; }
 
 .facilities .facilities-list ul {
   list-style: none;
@@ -370,7 +375,9 @@ body {
     margin-top: 30px;
     display: flex;
     align-items: center;
-    padding-right: 10px; }
+    padding-right: 10px;
+    padding-left: 0px;
+    transition: color .2s ease; }
     @media (max-width: 991px) {
       .facilities .facilities-list ul li {
         width: 33.33%; } }
@@ -383,7 +390,9 @@ body {
         flex-direction: column; } }
     .facilities .facilities-list ul li img {
       margin-right: 20px;
-      max-width: 35px; }
+      max-width: 35px;
+      -webkit-transition: -webkit-transform .5s ease-in-out;
+      transition: transform .5s ease-in-out; }
       @media (max-width: 767px) {
         .facilities .facilities-list ul li img {
           max-width: 30px; } }
@@ -391,6 +400,12 @@ body {
         .facilities .facilities-list ul li img {
           margin-right: 0;
           margin-bottom: 10px; } }
+    .facilities .facilities-list ul li:hover {
+      color: #ffffff;
+      transition: color .2s ease; }
+      .facilities .facilities-list ul li:hover img {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg); }
 
 .gallery.section-spacing {
   padding: 30px 0 20px; }
