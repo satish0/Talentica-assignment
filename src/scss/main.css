@@ -601,7 +601,8 @@ body {
   .contact-us .contact-details > a:hover {
     color: #F16739; }
 .contact-us .contact-form .form-group {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  position: relative; }
   .contact-us .contact-form .form-group .form-control {
     font-size: 18px;
     color: #808080;
@@ -612,6 +613,19 @@ body {
     border-bottom: 1px solid #999999; }
     .contact-us .contact-form .form-group .form-control:focus {
       box-shadow: none; }
+  .contact-us .contact-form .form-group small {
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+    bottom: -20px; }
+  .contact-us .contact-form .form-group.success .form-control {
+    border-color: #2ecc71; }
+  .contact-us .contact-form .form-group.error .form-control {
+    border-color: #e74c3c; }
+  .contact-us .contact-form .form-group.error small {
+    visibility: visible;
+    color: #e74c3c; }
 .contact-us .contact-form button {
   color: #ffffff;
   background-color: #F16739;
@@ -619,6 +633,7 @@ body {
   height: 48px;
   min-width: 192px;
   line-height: 1;
+  display: inline-block;
   background: #F16739 0% 0% no-repeat padding-box;
   border-radius: 24px;
   opacity: 1;
@@ -633,6 +648,11 @@ body {
     -moz-transition: color 0.8s ease, background-color 0.8s;
     -o-transition: color 0.8s ease, background-color 0.8s;
     transition: color 0.8s ease, background-color 0.8s; }
+.contact-us .contact-form #thankyoumessage {
+  padding-left: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  display: none; }
 
 .google-map {
   line-height: 0; }
