@@ -1,18 +1,14 @@
 {
-  "name": "Talentica-assignment",
-  "homepage": "https://satish0.github.io/Talentica-assignment",
+  "name": "talentica_assignment",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build:sass": "node-sass src/scss/main.scss src/css/style.css -w"
   },
-  "author": "Talentica-assignment",
+  "author": "talentica_assignment",
   "license": "ISC",
   "devDependencies": {
-    "gh-pages": "^3.1.0",
     "node-sass": "^4.14.1"
   },
   "dependencies": {
