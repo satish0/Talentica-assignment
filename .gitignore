@@ -4,5 +4,5 @@
 # accidentally including private information in public repositories and patch
 # files.
 
-node_modules
+/node_modules
 package-lock.json
