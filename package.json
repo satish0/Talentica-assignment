@@ -1,5 +1,5 @@
 {
-  "name": "Talentica",
+  "name": "Talentica-assignment",
   "homepage": "https://satish0.github.io/Talentica-assignment",
   "version": "1.0.0",
   "description": "",
@@ -9,7 +9,7 @@
     "deploy": "gh-pages -d build",
     "build:sass": "node-sass src/scss/main.scss src/css/style.css -w"
   },
-  "author": "Talentica",
+  "author": "Talentica-assignment",
   "license": "ISC",
   "devDependencies": {
     "gh-pages": "^3.1.0",
